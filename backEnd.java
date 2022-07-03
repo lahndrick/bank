@@ -15,10 +15,9 @@ public class backEnd extends Bank
 		
 		//creating customers
 		Customer c1 = new Customer("David Beaming");
-		Customer c2 = new Customer("Rashmeen Basdf");
-		Customer c3 = new Customer("Billy Aoieqwarrok");
-		Customer c4 = new Customer("Bob Bilbobaggins");
-		Customer c5 = new Customer("Lahndrick Hendricks");
+		Customer c2 = new Customer("Billy Aoieqwarrok");
+		Customer c3 = new Customer("Bob Bilbobaggins");
+		Customer c4 = new Customer("Lahndrick Hendricks");
 
 
 		//adding customers to bank
@@ -26,8 +25,6 @@ public class backEnd extends Bank
 		bank.addCustomer(c2);
 		bank.addCustomer(c3);
 		bank.addCustomer(c4);
-		bank.addCustomer(c5);
-
 		
 		//random 100 deposits per customer
 		for(int y = 0;y<100;y++)
