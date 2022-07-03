@@ -90,24 +90,6 @@ public class frontEnd extends JFrame implements ActionListener
 		frame.setVisible(true);
 	}
 	
-	//this is still only in a test phase, only working on "add" button
-	@Override
-	public void actionPerformed(ActionEvent e) 
-	{
-		if(searchCustomer.getText() != null)
-		{
-			String customerName = searchCustomer.getText();
-			
-			if(customerName != null && customerName.isEmpty() == false)
-			{
-				Customer newCustomer = new Customer(customerName);
-				backEnd.getBank().addCustomer(newCustomer);
-				System.out.println("Amount of customers: " + backEnd.getBank().size());
-				System.out.println("Recent customer: " + backEnd.getBank().getCustomer(backEnd.getBank().size() - 1));
-			}
-		}
-	}
-	
 	public static void main(String[] args)
 	{
 		frontEnd test = new frontEnd("bbc");
