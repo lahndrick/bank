@@ -10,7 +10,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
-public class frontEnd extends JFrame implements ActionListener
+public class frontEnd extends JFrame
 {
 	private backEnd backEnd = new backEnd("");
 	private JFrame frame = new JFrame("Banking app");
